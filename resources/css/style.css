@@ -1,0 +1,354 @@
+/* ============================= */
+/* FONTS */
+/* ============================= */
+
+@font-face{
+    src:url('../resources/fonts/SEGOEUI.TTF');
+    font-family: SEGOUI, sans-serif;
+}
+
+/* ============================= */
+/* BASIC SETUP */
+/* ============================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: SEGOUI, sans-serif;
+    font-size: 20px;
+    color: #464b4f;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    text-align: center;
+}
+
+.row{
+    max-width: 960px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ============================= */
+/* REUSUABLE COMPONENT */
+/* ============================= */
+
+.section-gap{
+    padding: 120px 0;
+}
+h1{
+    font-size: 400%;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.grid-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.btn{
+    margin-top: 60px;
+}
+
+.btn-full:link,
+.btn-full:visited{
+   color: #fff;
+    background: #7b77c9;
+    padding: 15px 45px;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block; 
+    transition: .5s;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    background: #3d3990;
+}
+
+
+
+/* ============================= */
+/* HEADER SECTION */
+/* ============================= */
+.header-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgb(0, 0, 0.7)), url('../img/header-bg.jpg') no-repeat center;
+    height: 100vh;
+    color: #fff;
+}
+
+.logo{
+    height: 85px;
+    margin-top: 8%;
+}
+
+.hero-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text p{
+    font-size: 90%;
+    width: 70%;
+    margin: auto;
+}
+
+.scroll-down{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 60px;
+    margin: auto;
+    color: #fff;
+}
+
+.scroll-down a i{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    font-size: 100%;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+
+.about-section{
+    background: url('../img/work-bg.png') no-repeat;
+}
+
+.introduce-text{
+    font-size: 150%;
+    font-weight: 400;
+    width: 90%;
+    margin: auto;
+}
+.sample-aria{
+    margin-top: 120px;
+}
+
+.sample-aria h2{
+    font-size: 400%;
+    font-weight: 700;
+}
+
+
+.grid-item h3{
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    
+}
+.grid-item p{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/* ============================= */
+/* WORK SECTION */
+/* ============================= */
+
+.work-section{
+    background: #23232e;
+    color: #fff;
+    text-align: center;
+}
+
+.work-section h3{
+    font-size: 105%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.work-section span{
+    font-size: 70%;
+    color: #6d7590,
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+
+nav{
+   padding: 45px 0; 
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    
+}
+
+nav ul li a{
+    color: #fff;
+    margin: 0 10px;
+    border-bottom: 2px solid transparent;
+    
+}
+
+nav ul li a:hover{
+    border-color: #fff;
+    transition: 1s;
+}
+
+.work-box img{
+    width: 100%;
+    display: block;
+    opacity: 0.5;
+    transition: 0.8s;
+    background: #000;   
+}
+
+.work-box img:hover{
+    opacity: 1;   
+}
+
+/* ============================= */
+/* PHOTOGRAPHY SECTION */
+/* ============================= */
+
+.photography-section{
+    background: url('../img/bg.png') no-repeat;
+}
+
+.photography-section h2{
+    font-size: 80px;
+}
+
+.photography-section p{
+    font-size: 150%;
+    color: #888a8b;
+    width: 71%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.photography-section img{
+    display: block;
+    width: 100%;
+    height: 350px;
+}
+
+/* ============================= */
+/* PHOTOGRAPHY SECTION */
+/* ============================= */
+
+.subscribe-section{
+    background: #23232e;
+    color:#fff;
+}
+
+.subscribe-section a{
+    font-size: 300%;
+    color: #fff;
+}
+
+.subscribe-section p{
+    font-size: 90%;
+    font-weight: 300;
+    width: 48%;
+    padding: 50px 0;
+    margin: auto;
+    display: block;
+}
+
+form input[type="email"]{
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    width: 380px;
+    color: #c8c8c8;
+}
+
+form input[type="submit"]{
+    padding: 13px 20px;
+    border-radius: 5px;
+    background: #7b77c9;
+    border: 0;
+    color: #fff;
+    transition: .5s;
+    font-size: 90%;
+}
+
+form input[type="submit"]:hover{
+    background: #3d3990;
+    cursor: pointer;
+}
+
+/* ============================= */
+/* FOOTER SECTION */
+/* ============================= */
+
+.footer-section{
+    background: url('../img/bg.png');
+}
+
+.social-icon{
+    
+}
+
+.social-icon ul{
+    
+}
+
+.social-icon ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icon ul li a{
+    color: #c8c8c8;
+    font-size: 150%;
+    transition: .5s;
+}
+
+.social-icon ul li a:hover{
+    color: #3d3990;
+    transform: rotate(45deg);
+    transform: scale(1.2);
+}
+
+.copyright-text{
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

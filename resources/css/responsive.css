@@ -1,0 +1,73 @@
+@media screen and (max-width:1240px){
+    html{
+        font-size: 90%;
+    }
+    
+    .row{
+        width: 100%;
+    } 
+}
+
+@media screen and (max-width:980px){
+    
+    .row{
+        width: 80%;
+    }
+    
+    .hero-text{
+        width: 100%;
+    }
+    
+    .hero-text h1{
+        font-size: 250%;    
+    }
+    
+    .grid-container{
+        grid-template-columns: auto auto;
+        
+    }
+    .photography-section h2{
+        font-size: 45px;
+    }
+    
+    .subscribe-btn {
+        margin-top: 15px;;
+    }
+}
+
+@media screen and (max-width: 480px){
+     .grid-container{
+        grid-template-columns: auto;  
+    }
+    
+    .row{
+        width: 80%;
+    }
+    
+    .photography-section h2{
+        font-size: 45px;
+    }
+    
+    .photography-section p{
+        width: 100%;
+    }
+    
+    .about-section p{
+        width: 100%;
+    }
+    .subscribe-section p{
+        width: 100%;
+    }
+    .subscribe-btn {
+        margin-top: 15px;;
+    }
+    
+    .logo{
+        margin-top: 100px;
+    }
+    
+    form input[type="email"]{
+        width: 100%;
+    }
+   
+}
